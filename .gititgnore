@@ -1,0 +1,10 @@
+### Node
+# Node Modules
+node_modules/
+
+### Angular
+typings/
+
+### IDE
+# IntelliJ project files
+.idea
