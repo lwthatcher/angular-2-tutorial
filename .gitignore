@@ -1,6 +1,7 @@
 ### Node
 # Node Modules
 node_modules/
+/npm-debug.log
 
 ### Angular
 typings/
@@ -10,3 +11,4 @@ app/**/*.map
 ### IDE
 # IntelliJ project files
 .idea/
+
