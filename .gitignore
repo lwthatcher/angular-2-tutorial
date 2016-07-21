@@ -8,7 +8,8 @@ typings/
 app/**/*.js
 app/**/*.map
 
-### IDE
+### IDEs
 # IntelliJ project files
 .idea/
-
+# Visual Studio Code
+.vscode/
