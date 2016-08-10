@@ -16,6 +16,18 @@ export class HeroDetailComponent implements OnInit, OnDestroy{
 	sub: any;
 
 	ngOnInit() {
+		console.log('route', this.route);
+		console.log('route url', this.route.url);
+		this.route.url.forEach(u => {
+			console.log('url', u);
+			let x = '';
+			u.forEach(tu => {
+				console.log('url part', tu);
+				console.log('url path', tu.path);
+				x += tu.path + '/';
+			});
+			console.log('full path', x);
+		});
 		// delivers array of of route parameters
 		this.sub = this.route.params.subscribe(params => {
 			let id = +params['id'];
