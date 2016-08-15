@@ -19,18 +19,6 @@ export class HeroDetailComponent implements OnInit{
 	private route: ActivatedRoute) { }
 
 	ngOnInit() {
-		console.log('route', this.route);
-		console.log('route url', this.route.url);
-		this.route.url.forEach(u => {
-			console.log('url', u);
-			let x = '';
-			u.forEach(tu => {
-				console.log('url part', tu);
-				console.log('url path', tu.path);
-				x += tu.path + '/';
-			});
-			console.log('full path', x);
-		});
 		// delivers array of of route parameters
 		this.route.params.forEach((params: Params) => {
 			let id = +params['id'];
